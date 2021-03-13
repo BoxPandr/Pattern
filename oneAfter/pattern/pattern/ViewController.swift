@@ -52,25 +52,30 @@ class ViewController: UIViewController {
     
     @objc
     func btnOne(){
+        resetAll()
         lhs.beSelected = true
-        mid.beSelected = false
-        rhs.beSelected = false
+        
     }
     
     
     @objc
     func btnTwo(){
-        lhs.beSelected = false
+        resetAll()
         mid.beSelected = true
-        rhs.beSelected = false
     }
 
     
     @objc
     func btnThree(){
+        resetAll()
+        rhs.beSelected = true
+    }
+    
+    
+    func resetAll(){
         lhs.beSelected = false
         mid.beSelected = false
-        rhs.beSelected = true
+        rhs.beSelected = false
     }
 }
 
