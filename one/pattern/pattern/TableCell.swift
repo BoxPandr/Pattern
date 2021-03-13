@@ -9,7 +9,7 @@ import UIKit
 
 class TableCell: UITableViewCell {
     
-    
+    static let k = "TableCell"
     
     var beSelected: Bool = false{
         didSet{

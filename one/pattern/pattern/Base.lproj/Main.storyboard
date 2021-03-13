@@ -20,14 +20,18 @@
                                 <rect key="frame" x="87" y="250.5" width="240" height="405"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-5F-QUv">
-                                        <rect key="frame" x="39" y="0.0" width="162" height="187.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="187.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBq-jq-csQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="187.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBq-jq-csQ" customClass="StateBtn" customModule="pattern" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="187.5"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-zX-SvY">
-                                                <rect key="frame" x="116" y="0.0" width="46" height="187.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyT-Fw-hYR" userLabel="mid" customClass="StateBtn" customModule="pattern" customModuleProvider="target">
+                                                <rect key="frame" x="103.5" y="0.0" width="33" height="187.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-zX-SvY" customClass="StateBtn" customModule="pattern" customModuleProvider="target">
+                                                <rect key="frame" x="206.5" y="0.0" width="33.5" height="187.5"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
@@ -51,8 +55,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lhs" destination="WBq-jq-csQ" id="JMD-Uo-y6z"/>
-                        <outlet property="rhs" destination="0zc-zX-SvY" id="TWJ-vy-k5l"/>
+                        <outlet property="lhs" destination="WBq-jq-csQ" id="I0S-8z-WrQ"/>
+                        <outlet property="mid" destination="WyT-Fw-hYR" id="Rqj-AD-R5d"/>
+                        <outlet property="rhs" destination="0zc-zX-SvY" id="1U9-sV-Lwf"/>
                         <outlet property="table" destination="gXz-IX-ZRi" id="kWz-Au-Urx"/>
                     </connections>
                 </viewController>
