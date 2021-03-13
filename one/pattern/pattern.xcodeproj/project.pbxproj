@@ -13,6 +13,8 @@
 		2609C2C325FCD34A002ABE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2609C2C125FCD34A002ABE04 /* Main.storyboard */; };
 		2609C2C525FCD34A002ABE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2609C2C425FCD34A002ABE04 /* Assets.xcassets */; };
 		2609C2C825FCD34A002ABE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2609C2C625FCD34A002ABE04 /* LaunchScreen.storyboard */; };
+		2609C2D225FCD41C002ABE04 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609C2D025FCD41C002ABE04 /* TableCell.swift */; };
+		2609C2D325FCD41C002ABE04 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2609C2D125FCD41C002ABE04 /* TableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2609C2C425FCD34A002ABE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2609C2C725FCD34A002ABE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2609C2C925FCD34A002ABE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2609C2D025FCD41C002ABE04 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		2609C2D125FCD41C002ABE04 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2609C2C425FCD34A002ABE04 /* Assets.xcassets */,
 				2609C2C625FCD34A002ABE04 /* LaunchScreen.storyboard */,
 				2609C2C925FCD34A002ABE04 /* Info.plist */,
+				2609C2D025FCD41C002ABE04 /* TableCell.swift */,
+				2609C2D125FCD41C002ABE04 /* TableCell.xib */,
 			);
 			path = pattern;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				2609C2C825FCD34A002ABE04 /* LaunchScreen.storyboard in Resources */,
 				2609C2C525FCD34A002ABE04 /* Assets.xcassets in Resources */,
+				2609C2D325FCD41C002ABE04 /* TableCell.xib in Resources */,
 				2609C2C325FCD34A002ABE04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				2609C2C025FCD34A002ABE04 /* ViewController.swift in Sources */,
 				2609C2BC25FCD34A002ABE04 /* AppDelegate.swift in Sources */,
+				2609C2D225FCD41C002ABE04 /* TableCell.swift in Sources */,
 				2609C2BE25FCD34A002ABE04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
