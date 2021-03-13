@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,9 +16,30 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bId-dL-kgl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <viewLayoutGuide key="safeArea" id="Zcq-9d-jiW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bId-dL-kgl" secondAttribute="trailing" id="2bO-Xs-Xng"/>
+                    <constraint firstItem="bId-dL-kgl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="82G-MF-erl"/>
+                    <constraint firstItem="bId-dL-kgl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8NK-Bm-MlN"/>
+                    <constraint firstAttribute="bottom" secondItem="bId-dL-kgl" secondAttribute="bottom" id="ykh-MO-V96"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverView" destination="bId-dL-kgl" id="9Jp-UI-gpa"/>
+            </connections>
             <point key="canvasLocation" x="20" y="92"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

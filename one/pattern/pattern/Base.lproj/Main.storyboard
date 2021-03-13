@@ -44,6 +44,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="2E4-F1-MfL"/>
                                     <constraint firstAttribute="height" constant="405" id="p9P-Ji-8XO"/>
+                                    <constraint firstItem="gXz-IX-ZRi" firstAttribute="width" secondItem="LDL-rV-pv1" secondAttribute="width" id="x1T-Oa-kqh"/>
                                 </constraints>
                             </stackView>
                         </subviews>

@@ -11,13 +11,20 @@ class TableCell: UITableViewCell {
     
     static let k = "TableCell"
     
+    
+    
+    @IBOutlet weak var coverView: UIView!
+    
+    
+    let dftColor = UIColor.white
+    
     var beSelected: Bool = false{
         didSet{
             if beSelected{
-                backgroundColor = UIColor.red
+                coverView.backgroundColor = UIColor.red
             }
             else{
-                backgroundColor = UIColor.white
+                coverView.backgroundColor = dftColor
             }
         }
     }
@@ -29,6 +36,7 @@ class TableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        coverView.backgroundColor = dftColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
