@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var table: UITableView!
     
     
-    var lastSelectedItem: Int? = nil
+    var selectedItem: Int? = nil
     
 
     override func viewDidLoad() {
@@ -102,19 +102,8 @@ extension ViewController{
 extension ViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if let last = lastSelectedItem{
-            guard last != indexPath.row else{
-                return
-            }
-            if let cell = tableView.cellForRow(at: IndexPath(row: last, section: 0)) as? TableCell{
-                cell.beSelected = false
-            }
-        }
-        if let cell = tableView.cellForRow(at: indexPath) as? TableCell{
-            cell.beSelected = true
-        }
-        lastSelectedItem = indexPath.row
+        selectedItem = indexPath.row
+        tableView.reloadData()
     }
     
     
@@ -131,6 +120,14 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = tableView.dequeueReusableCell(withIdentifier: TableCell.k, for: indexPath)
+        if let cel = item as? TableCell{
+            if let row = selectedItem, row == indexPath.row{
+                cel.beSelected = true
+            }
+            else{
+                cel.beSelected = false
+            }
+        }
         return item
     }
     
